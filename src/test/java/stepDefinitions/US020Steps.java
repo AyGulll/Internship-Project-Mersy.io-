@@ -1,27 +1,23 @@
 package stepDefinitions;
 
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import pages.Methods;
-import pages.body;
-import pages.header;
+import pages.Body;
+import pages.Header;
 import utilities.BaseDriver;
 
-import java.awt.*;
-import java.awt.event.KeyEvent;
 import java.time.Duration;
 
 public class US020Steps {
-    header hp = new header();
-    body bp = new body();
+    Header hp = new Header();
+    Body bp = new Body();
     Methods mt = new Methods();
+
     public WebDriverWait wait = new WebDriverWait(BaseDriver.getDriver(), Duration.ofSeconds(15));
 
     @When("the student clicks on the Assignments")
@@ -70,7 +66,7 @@ public class US020Steps {
     }
     @When("The student clicks on any part of one of the homeworks item in the list")
     public void theStudentClicksOnAnyPartOfOneOfTheHomeworksItemInTheList() {
-        mt.myClick(bp.firstHomeworkPanel);
+        mt.myScriptClick(bp.firstHomeworkPanel);
     }
 
     @Then("Verify the student is directed to the homework details page")
