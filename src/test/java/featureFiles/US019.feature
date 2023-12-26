@@ -7,7 +7,8 @@ Feature: Assignments Feature
     When  Click login Button
     Then  Verify that student logged in
 
-  Scenario:
+  @RegressionTest
+  Scenario: Grading Scenario
     When the student clicks on the assignments page->discussion
     Then the student should see and be able to click on an icon Chats
     And  the student should be able to select the person people Contacts

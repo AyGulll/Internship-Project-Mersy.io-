@@ -10,14 +10,12 @@ Feature: Payment via Finance Section
     When  Click login Button
     Then  Verify that student logged in
 
-  @SmokeTest
   Scenario: Perform Safe Payment Process
     When the student clicks on the Hamburger Menu
     And selects Finance > My Finance
     Then the student should be directed to the My Finance section
     Given The student must have fee for payment
-    When the student clicks one of the elements of the Students Fees table
-    Then the student should be directed to the Student Fee section
-    When the student selects provider for payment process
-    And the student selects pay type, amount and completes payment process by entering credit card information
-    Then a success message should appear confirming the process
+    When the student clicks three dots icon for report
+    And clicks on the excel report
+    And clicks on the pdf report
+

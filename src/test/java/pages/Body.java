@@ -7,37 +7,37 @@ import utilities.BaseDriver;
 
 import java.util.List;
 
-public class body extends Methods {
+public class Body extends Methods {
 
-    public body() {
+    public Body() {
         PageFactory.initElements(BaseDriver.getDriver(), this);
     }
 
     //////////////////////Aygül/////////////////////
 
-    @FindBy(id ="mat-button-toggle-1-button" )
+    @FindBy(id = "mat-button-toggle-1-button")
     public WebElement courseGrade;
-    @FindBy(xpath= "//*[text()=' Course Name ']" )
+    @FindBy(xpath = "//*[text()=' Course Name ']")
     public WebElement courseName;
     @FindBy(xpath = "//span[contains(text(),'Student Transcript')]")
     public WebElement studentTranscript;
-    @FindBy(xpath= "//*[@class='w-100-p']" )
+    @FindBy(xpath = "//*[@class='w-100-p']")
     public WebElement courseCode;
     @FindBy(xpath = "//span[contains(text(),'Transcript By Subject')]")
     public WebElement transccriptSubject;
-    @FindBy(xpath= "//*[text()=' Subject '] " )
+    @FindBy(xpath = "//*[text()=' Subject '] ")
     public WebElement subject;
     @FindBy(xpath = "//div[@class='mat-form-field-infix ng-tns-c2794762957-92']")
     public WebElement semester;
-   @FindBy(xpath = "//*[@id='mat-option-11']")
+    @FindBy(xpath = "//*[@id='mat-option-11']")
     public WebElement all;
- //   @FindBy(xpath = "//body/app/student-layout[@class='ng-star-inserted']/div/mat-drawer-container[@class='mat-drawer-container drawer-contener mat-drawer-container-explicit-backdrop']/mat-drawer-content[@class='mat-drawer-content']/div[@id='container-3']/ms-assignment-panel-student[@class='ng-star-inserted']/div/div[@class='table100 ver1 m-b-110']/div[@class='content']/div[@class='ps']/div[@class='ng-star-inserted']/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]")
- //   public WebElement project;
+    //   @FindBy(xpath = "//body/app/student-layout[@class='ng-star-inserted']/div/mat-drawer-container[@class='mat-drawer-container drawer-contener mat-drawer-container-explicit-backdrop']/mat-drawer-content[@class='mat-drawer-content']/div[@id='container-3']/ms-assignment-panel-student[@class='ng-star-inserted']/div/div[@class='table100 ver1 m-b-110']/div[@class='content']/div[@class='ps']/div[@class='ng-star-inserted']/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]")
+    //   public WebElement project;
     @FindBy(xpath = "(//button[@matbadgecolor='accent'])[4]")
     public WebElement discussionButton;
 
-   // @FindBy(xpath = "//div[@class='cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing']")
-   // public WebElement chatsButton;
+    // @FindBy(xpath = "//div[@class='cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing']")
+    // public WebElement chatsButton;
     @FindBy(xpath = "//button[@class='mat-mdc-button-touch-target']")
     public WebElement contacts;
     @FindBy(xpath = "//span[contains(text(),'Mark Zuckerberg')]")
@@ -45,16 +45,8 @@ public class body extends Methods {
     @FindBy(xpath = "")
     public WebElement notSuccesInfo;
 
- // @FindBy(xpath = "//ms-icon-button[@class='ng-tns-c1298419688-99']//span[@class='mat-mdc-button-touch-target']")
- // public WebElement AttachFiles;
-
-
-
-
-
-
-
-
+    // @FindBy(xpath = "//ms-icon-button[@class='ng-tns-c1298419688-99']//span[@class='mat-mdc-button-touch-target']")
+    // public WebElement AttachFiles;
 
 
     ///////////////////Senol/////////////////////////
@@ -74,9 +66,9 @@ public class body extends Methods {
     @FindBy(xpath = "//ms-add-button//button")
     public WebElement addButton;
     @FindBy(xpath = "//span[@class='mat-calendar-body-cell-content mat-focus-indicator mat-calendar-body-selected']")
-    public  WebElement selectDayButton;
+    public WebElement selectDayButton;
     @FindBy(xpath = "//span[@class='mat-option-text']")
-    public List< WebElement> dayType;
+    public List<WebElement> dayType;
     @FindBy(xpath = " (//div[@cdk-overlay-origin]/div)[6]")
     public WebElement arrowButton;
     @FindBy(xpath = "//button[@aria-label='Open calendar']")
@@ -127,7 +119,6 @@ public class body extends Methods {
     public WebElement statistics;
     @FindBy(xpath = "(//span[text()=' Published '])[1]")
     public WebElement assertionPublished;
-
     @FindBy(xpath = "//mat-option[@id='mat-option-2']")
     public WebElement resultsPublishedCheckBox;
     @FindBy(xpath = "(//span[text()=' Results Published '])[1]")
@@ -150,61 +141,12 @@ public class body extends Methods {
     public WebElement showByDate;
     @FindBy(xpath = "(//button[@tabindex='0'])[6]")
     public WebElement showByChart;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "(//div[@class='ng-star-inserted'])[6]")
+    public WebElement studentFeesText;
 
 
 
     //////////////////////Musab///////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     //////////////////////Göksah///////////////////////
@@ -289,6 +231,8 @@ public class body extends Methods {
     @FindBy(xpath = "//div[text()='course notes']")
     public WebElement outboxMessage;
 
+    @FindBy(xpath = "//span[text()='Print']")
+    public WebElement printButton;
 
 
     //////////////////////Talat///////////////////////
@@ -334,16 +278,42 @@ public class body extends Methods {
 
     @FindBy(xpath = "//button[@role='menuitem']")
     public List<WebElement> profileButtonList;
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath = "(//span[contains(.,'Weekly Course Plan')])[2]")
+    public WebElement weeklycoursePlanText;
+    @FindBy(xpath = "//span[contains(.,'Published')]")
+    public WebElement publishedText;
+    @FindBy(xpath = "//span[contains(.,'Started')]")
+    public WebElement startedText;
+    @FindBy(xpath = "//span[contains(.,'Ended')]")
+    public WebElement endedText;
+    @FindBy(xpath = "//span[contains(.,'Cancelled')]")
+    public WebElement cacelledText;
+    @FindBy(xpath = "(//button[contains(.,'Week')])[2]")
+    public WebElement weekText;
+    @FindBy(xpath = "//button[contains(.,'Month')]")
+    public WebElement monthText;
+    @FindBy(xpath = "//button[contains(.,'Day')]")
+    public WebElement dayText;
+    @FindBy(xpath = "//button[contains(.,'List')]")
+    public WebElement listText;
+    @FindBy(id = "mat-button-toggle-2-button")
+    public WebElement calendarPlanButton;
+    @FindBy(xpath = "(//div[@class='mdc-radio'])[1]")
+    public WebElement stripeRadio;
+    @FindBy(xpath = "(//div[@class='mdc-radio'])[5]")
+    public WebElement pay;
+    @FindBy(xpath = "//input[@data-placeholder='Amount']")
+    public WebElement inputAmount;
+    @FindBy(id = "Field-numberInput")
+    public WebElement inputCardNum;
+    @FindBy(id = "Field-expiryInput")
+    public WebElement inputExpiration;
+    @FindBy(id = "Field-cvcInput")
+    public WebElement inputCvc;
+    @FindBy(xpath = "//img[@class='stripe-img']")
+    public WebElement stripePayment;
+    @FindBy(xpath = "//div[contains(.,'Student Payment successfully created')]")
+    public WebElement paymentSuccessfully;
 
 
     //////////////////////Ümit///////////////////////
@@ -436,29 +406,60 @@ public class body extends Methods {
     @FindBy(xpath = "(//button[@class='mat-mdc-tooltip-trigger mdc-icon-button mat-mdc-icon-button mat-unthemed mat-mdc-button-base mat-mdc-tooltip-disabled'])[2]")
     public WebElement homeworkDiscussionButton;
 
+    // Assignments > Semester dropbox > Submit
+
+    @FindBy(xpath = "//ms-icon-button[@icon='file-import']")
+    public List<WebElement> submitButtonList;
+
+    @FindBy(xpath = "//span[contains(text(), ' Submission Attempt(s)')]")
+    public WebElement textEditorDialogBox;
+
+    @FindBy(xpath = "//span[text()='Submit']")
+    public WebElement textEditorSubmitButton;
+
+    @FindBy(xpath = "//*[@id='tinymce']") //body//p
+    public WebElement textEditor;
+
+    @FindBy(xpath = "//button[@role='menuitem']")
+    public List<WebElement> textEditorMenu;
+
+    @FindBy(xpath = "//div[@title='Image...']")
+    public WebElement image;
+
+    @FindBy(xpath = "//input[@type='url']")
+    public WebElement source;
+
+    @FindBy(xpath = "(//input[@type='text' and @tabindex='-1'])[1]")
+    public WebElement alternativeDescription;
+
+    @FindBy(xpath = "(//button[@title='Save'])[2]")
+    public WebElement pictureInsertSaveButton;
+
+    @FindBy(xpath = "//div[@title='Table']")
+    public WebElement table;
+
+    @FindBy(xpath = "//div[@role='button' and @aria-label='1 columns, 1 rows']")
+    public WebElement firstCell;
+
+    @FindBy(xpath = "//div[@role='button' and @aria-label='10 columns, 10 rows']")
+    public WebElement lastCell;
+
+    @FindBy(xpath = "//ms-standard-button[@icon='hdd']")
+    public WebElement myFromLocalButton;
+
+    @FindBy(xpath = "//ms-button[@icon='save']")
+    public WebElement saveAsDraftButton;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement yesButton;
+
+    @FindBy(xpath = "//span[text()='New Submission']")
+    public WebElement newSubmissionButton;
+
     //////////////////////Talip///////////////////////
 
 
-
-
-
-
-
-
-
     //////////////////////Sokol///////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     //////////////////////Rustam///////////////////////
@@ -489,10 +490,6 @@ public class body extends Methods {
     public WebElement submitbutton;
 
 
-
-
-
-
     //**** user25
 
     @FindBy(xpath = "//*[@id='container-3']/courses-calendar/div/ms-course-schedule-board/ms-browse/div/div/div/div[2]/button[1]/span[3]")
@@ -506,21 +503,6 @@ public class body extends Methods {
     public WebElement startButon;
     @FindBy(css = " .assignment.ng-star-inserted ms-icon-button:nth-child(2)")
     public List<WebElement> homeworklist;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     public WebElement getWebelement(String stringElement) {
@@ -575,20 +557,41 @@ public class body extends Methods {
                 return this.recordingButon;
             case "startButon":
                 return this.startButon;
-
-
+            case "eyeButton":
+                return this.eyeButton;
+            case "weeklycoursePlanText":
+                return this.weeklycoursePlanText;
+            case "publishedText":
+                return this.publishedText;
+            case"startedText":
+                return this.startedText;
+            case"endedText":
+                return this.endedText;
+            case "cacelledText":
+                return this.cacelledText;
+            case "calendarPlanButton":
+                return this.calendarPlanButton;
+            case"weekText":
+                return this.weekText;
+            case"monthText":
+                return this.monthText;
+            case"dayText":
+                return this.dayText;
+            case"listText":
+                return this.listText;
 
         }
 
         return null;
     }
+
     public List<WebElement> getWebelmentList(String stringList) {
         switch (stringList) {
             case "hamburgMenuList":
                 return this.hamburgMenuList;
-            case"profileButtonList":
+            case "profileButtonList":
                 return this.profileButtonList;
-            case"homeworklist":
+            case "homeworklist":
                 return this.homeworklist;
 
         }

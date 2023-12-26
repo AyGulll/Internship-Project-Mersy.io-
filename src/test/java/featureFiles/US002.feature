@@ -7,7 +7,8 @@ Feature: Home Page Functionality
     When  Click login Button
     Then  Verify that student logged in
 
-  Scenario:
+  @RegressionTest
+  Scenario: HomePage Scenario
     When User must click on the logo
     Then should be able to get to the main page of the course
     And get general information
