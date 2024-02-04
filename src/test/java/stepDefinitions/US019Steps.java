@@ -23,7 +23,7 @@ public class US019Steps extends Methods{
         mt.myClick(hp.assignmentsButton);
         mt.myClick(bp.semester);
         mt.myClick(bp.all);
-        //  mt.myClick(bp.project);
+       // mt.myClick(bp.project);
         mt.wait.until(ExpectedConditions.visibilityOf(bp.discussionButton));
         mt.myClickWithoutScroll(bp.discussionButton);
     }
